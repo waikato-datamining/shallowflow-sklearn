@@ -9,23 +9,9 @@ Install via pip:
 pip install "git+https://github.com/waikato-datamining/shallowflow-sklearn.git"
 ```
 
-## Actors
+## Classes
 
-* Sources
-
-  * `shallowflow.sklearn.sources.`
-
-* Transformers
-
-  * `shallowflow.sklearn.transformers.DatasetLoader`
-  * `shallowflow.sklearn.transformers.SupervisedScoring`
-  * `shallowflow.sklearn.transformers.TrainSupervisedEstimator`
-  * `shallowflow.sklearn.transformers.TrainUnsupervisedEstimator`
-  * `shallowflow.sklearn.transformers.UnsupervisedScoring`
-    
-* Sinks
-
-  * `shallowflow.sklearn.sinks.`
+[Documentation](https://github.com/waikato-datamining/shallowflow-doc/tree/main/classdoc/sklearn/README.md)
  
 
 ## Examples
