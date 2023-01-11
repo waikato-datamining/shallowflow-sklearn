@@ -17,7 +17,7 @@ flow = Flow().manage([
     ]),
     Trigger({"name": "train"}).manage([
         GetStorage({"storage_name": "dataset"}),
-        TrainUnsupervisedEstimator({"estimator": GenericConfiguration({"class_name": "sklearn.cluster.KMeans", "options": {"n_clusters": 3}})}),
+        TrainUnsupervisedEstimator({"estimator": GenericConfiguration({"class_name": "sklearn.cluster.KMeans", "options": {"n_clusters": 3, "n_init": 10}})}),
         SetStorage({"storage_name": "estimator"})
     ]),
     Trigger({"name": "predict"}).manage([
