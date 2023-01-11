@@ -10,7 +10,7 @@ from shallowflow.sklearn.transformers.datasetloaders import ArffLoader
 flow = Flow().manage([
     FileSupplier({"files": [File("./data/iris.arff")]}),
     DatasetLoader({"loader": ArffLoader({"class_index": "last"})}),
-    TrainUnsupervisedEstimator({"estimator": GenericConfiguration({"class_name": "sklearn.cluster.KMeans", "options": {"n_clusters": 3}})}),
+    TrainUnsupervisedEstimator({"estimator": GenericConfiguration({"class_name": "sklearn.cluster.KMeans", "options": {"n_clusters": 3, "n_init": 10}})}),
     GetContainerValue({"value_name": "estimator"}).manage([
         ConsoleOutput({"prefix": "\n--> model\n"})
     ]),
