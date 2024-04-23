@@ -1,4 +1,4 @@
-from shallowflow.api.config import Option, get_class_name
+from coed.config import Option, get_class_name
 from shallowflow.api.storage import StorageUser, StorageName
 from sklearn.base import BaseEstimator
 from ._AbstractEstimatorConfiguration import AbstractEstimatorConfiguration

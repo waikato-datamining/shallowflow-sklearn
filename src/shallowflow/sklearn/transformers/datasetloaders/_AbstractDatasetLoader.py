@@ -1,7 +1,7 @@
 import os
 import numpy as np
-from shallowflow.api.config import AbstractOptionHandler, optionhandler_to_dict, dict_to_optionhandler
-from shallowflow.api.serialization.objects import add_dict_writer, add_dict_reader
+from coed.config import AbstractOptionHandler, optionhandler_to_dict, dict_to_optionhandler
+from coed.serialization.objects import add_dict_writer, add_dict_reader
 
 
 def split_off_class(data, class_index):

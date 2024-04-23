@@ -1,5 +1,5 @@
 from shallowflow.api.transformer import AbstractSimpleTransformer
-from shallowflow.api.config import Option
+from coed.config import Option
 from shallowflow.api.io import File
 from shallowflow.sklearn.transformers.datasetloaders import AbstractDatasetLoader, ArffLoader
 

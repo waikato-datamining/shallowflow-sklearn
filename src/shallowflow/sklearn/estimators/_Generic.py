@@ -1,4 +1,4 @@
-from shallowflow.api.config import Option, class_name_to_type
+from coed.config import Option, class_name_to_type
 from sklearn.base import BaseEstimator
 from ._AbstractEstimatorConfiguration import AbstractEstimatorConfiguration
 

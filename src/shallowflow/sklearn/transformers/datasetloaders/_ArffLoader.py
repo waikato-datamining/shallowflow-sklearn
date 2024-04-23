@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.io.arff import loadarff
-from shallowflow.api.config import Option
+from coed.config import Option
 from shallowflow.sklearn.datasets import Dataset, SupervisedDataset
 from ._AbstractDatasetLoader import AbstractDatasetLoader, split_off_class
 
