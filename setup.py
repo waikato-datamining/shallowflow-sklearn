@@ -38,6 +38,11 @@ setup(
         "shallowflow-api",
         "scikit-learn",
     ],
+    entry_points={
+        "class_lister": [
+            "sf.sklearn=shallowflow.sklearn.class_lister:list_classes",
+        ],
+    },
     version="0.0.1",
     author='Peter Reutemann',
     author_email='fracpete@waikato.ac.nz',
