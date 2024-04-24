@@ -87,7 +87,7 @@ class AbstractDatasetLoader(AbstractOptionHandler):
 
         :return: the container class
         """
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def _do_load(self, path):
         """
@@ -97,7 +97,7 @@ class AbstractDatasetLoader(AbstractOptionHandler):
         :type path: str
         :return: the dataset
         """
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def load(self, path):
         """

@@ -8,7 +8,7 @@ class EstimatorContainer(AbstractContainer):
 
     VALUE_DATASET = "dataset"
 
-    def __init__(self, estimator, dataset=None):
+    def __init__(self, estimator=None, dataset=None):
         """
         Initializes the container.
 

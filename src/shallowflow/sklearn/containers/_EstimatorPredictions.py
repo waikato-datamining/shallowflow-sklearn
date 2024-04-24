@@ -13,7 +13,7 @@ class EstimatorPredictions(AbstractContainer):
 
     VALUE_PROBABILITIES = "probabilities"
 
-    def __init__(self, estimator, predictions=None, probabilities=None, dataset=None):
+    def __init__(self, estimator=None, predictions=None, probabilities=None, dataset=None):
         """
         Initializes the container.
 

@@ -27,7 +27,7 @@ class AbstractTrainEstimator(AbstractSimpleTransformer):
         :return: the estimator
         :rtype: AbstractEstimatorConfiguration
         """
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def generates(self):
         """
@@ -49,7 +49,7 @@ class AbstractTrainEstimator(AbstractSimpleTransformer):
         :return: the generated container if successfully trained
         :rtype: EstimatorContainer
         """
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def _do_execute(self):
         """

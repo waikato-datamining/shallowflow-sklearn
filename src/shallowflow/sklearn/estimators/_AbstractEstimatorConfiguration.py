@@ -61,7 +61,7 @@ class AbstractEstimatorConfiguration(AbstractOptionHandler, FlowContextHandler):
         :return: the estimator
         :rtype: BaseEstimator
         """
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def configure(self):
         """
