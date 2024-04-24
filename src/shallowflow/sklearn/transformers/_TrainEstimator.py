@@ -1,3 +1,4 @@
+import abc
 from shallowflow.api.transformer import AbstractSimpleTransformer
 from coed.config import Option
 from shallowflow.sklearn.estimators import AbstractEstimatorConfiguration
@@ -7,7 +8,7 @@ from shallowflow.sklearn.containers import EstimatorContainer
 from sklearn.base import BaseEstimator
 
 
-class AbstractTrainEstimator(AbstractSimpleTransformer):
+class AbstractTrainEstimator(AbstractSimpleTransformer, abc.ABC):
     """
     Trains the specified sklearn estimator on the incoming dataset.
     """

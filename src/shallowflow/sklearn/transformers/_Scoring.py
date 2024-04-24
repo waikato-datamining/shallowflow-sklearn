@@ -1,3 +1,4 @@
+import abc
 from coed.config import Option
 from shallowflow.api.storage import StorageUser, StorageName
 from shallowflow.api.transformer import AbstractSimpleTransformer
@@ -5,7 +6,7 @@ from shallowflow.sklearn.containers import EstimatorContainer, EstimatorPredicti
 from shallowflow.sklearn.datasets import Dataset
 
 
-class AbstractScoring(AbstractSimpleTransformer, StorageUser):
+class AbstractScoring(AbstractSimpleTransformer, StorageUser, abc.ABC):
     """
     Ancestor for classes that perform scoring on incoming data and
     an estimator from storage.

@@ -1,4 +1,4 @@
-class Dataset(object):
+class Dataset:
     """
     Container class for datasets.
     """
