@@ -13,7 +13,7 @@ def _read(f):
 
 
 setup(
-    name="shallowflow-sklearn",
+    name="shallowflow_sklearn",
     description="scikit-learn components for the Python 3 shallowflow workflow engine.",
     long_description=(
         _read('DESCRIPTION.rst') + b'\n' +
@@ -35,7 +35,7 @@ setup(
     ],
     install_requires=[
         "numpy",
-        "shallowflow-api",
+        "shallowflow_api",
         "scikit-learn",
     ],
     entry_points={
